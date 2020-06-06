@@ -2,6 +2,8 @@ module.exports = {
   root: true,
   env: {
     node: true,
+    browser: true,
+    es6: true,
   },
   extends: [
     'plugin:vue/essential',
@@ -13,5 +15,12 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "import/prefer-default-export": "off",
+    "no-console": "off",
+    "no-use-before-define": "warn",
+    "no-useless-escape": "off",
+    "quotes": "off",
+    "comma-dangle": "off",
+    "vue/no-unused-components": "off"
   },
 };
